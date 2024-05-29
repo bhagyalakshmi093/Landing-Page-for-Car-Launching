@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color: rgb(13, 255, 0);"></body> 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Car Launch</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("{% static 'img/new.jpg' %}");
+            background-size: cover; /* Ensures the image covers the whole background */
+            background-repeat: no-repeat; /* Prevents repeating the image */
+            background-position: center; /* Centers the image */
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <h1>Welcome to the Future of Driving</h1>
+        <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">Introducing the all-new, revolutionary car that will change the way you drive.</p>
+        <img src="{% static 'img/car.png' %}" alt="Car Image" style="width:25%;"> 
+        <!-- <img src="{% static 'img/mc.jpg' %}" alt="Car Image" style="width:25%;"> 
+        <img src="{% static 'img/car12.avif' %}" alt="Car Image" style="width:25%;"> 
+        <img src="{% static 'img/carr.jpg' %}" alt="Car Image" style="width:20%;"> -->
+    </div>
+    <div class="cta">
+        <style>
+            h2{text-align:center;
+               position: relative;
+               padding-left: 400px;
+            }
+        </style>
+        <h2 style="color:green">Ready to Drive?</h2>
+        <p align="center": style="color:orangered;padding-left: 450px;">Contact us today to know more or schedule a test drive.</p>
+        <p align = "center"><button style="background-color: red;color: black;transform: translateX(200px);">Contact Us</button></p>
+    </div>
+    <div class="features container">
+        <!-- <h>HOW IT WORKS!</h> -->
+        <!-- <center>HOW IT WORKS!</center> -->
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{% static 'img/bg.jpg' %}" alt="Car Image" style="width:25%;">
+                <h3>CARMAZING CAR FINDER!</h3>
+                <p style="color:blue;">Find your dream car and make a down payment on the paltform.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="{% static 'img/carb.png' %}" alt="Car Image" style="width:25%;">
+                <h3>TEST THE CAR FOR 5 DAYS!</h3>
+                <p style="color: blue;">If you love it,your complete payment and if you dont you get your money back..</p>
+            </div>
+            <div class="col-md-4">
+                <img src="{% static 'img/carg.png' %}" alt="Car Image" style="width:25%;">
+                <h3>WE DELIVER YOUR CAR!</h3>
+                <p style="color: blue;">Set Up a drop off time convenient for you and we will deliver your sweet ride.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
